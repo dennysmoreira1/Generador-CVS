@@ -46,14 +46,6 @@ const AppContent = () => {
         actions.togglePreview();
     };
 
-    // Función para volver al selector de plantillas
-    const handleBackToTemplates = () => {
-        actions.setTemplateSelected(false);
-        if (state.isPreviewMode) {
-            actions.togglePreview();
-        }
-    };
-
     const pageVariants = {
         hidden: { opacity: 0, x: -20 },
         visible: { opacity: 1, x: 0 },
